@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #1c0522, #0f0c29);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #5a189a, #ff6f00);
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px #fbbf24;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.nav a {
+    margin: 0 15px;
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #fbbf24;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #5a189a;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ff6f00;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border: 3px solid #fbbf24;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.video-wrapper iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.testimonials blockquote {
+    margin: 20px auto;
+    font-style: italic;
+    max-width: 600px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.contact button {
+    background-color: #fbbf24;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #ff6f00;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c0522;
+}
+
+.footer a {
+    color: #fbbf24;
+    text-decoration: none;
+}
