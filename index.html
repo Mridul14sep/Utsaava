@@ -1,82 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Utsaava | India's Most Premium Celebration Agency</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsaava – India’s Most Premium Celebration Agency</title>
+  <style>
+    :root {
+      --orange: #ff6f00;
+      --purple: #5a189a;
+      --gold: #fbbf24;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background: var(--purple);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img.logo {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: var(--orange);
+      font-size: 2rem;
+    }
+
+    .gallery img {
+      width: 22%;
+      margin: 1%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    form button {
+      background: var(--gold);
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--purple);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer a {
+      color: var(--gold);
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <img src="logo.png" class="logo" alt="Utsaava Logo">
-        <h1 class="brand-name">Utsaava</h1>
-        <p class="tagline">India’s Most Premium Celebration Agency</p>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about" class="section" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>Utsaava blends age-old Indian traditions with modern luxury, delivering celebrations that speak elegance and culture. From sacred rituals to glamorous decor, every detail is designed to awe.</p>
-    </section>
+  <header>
+    <img src="logo.png" alt="Utsaava Logo" class="logo" />
+    <div>
+      <h1>Utsaava</h1>
+      <p>India’s Most Premium Celebration Agency</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="services" class="section services" data-aos="fade-right">
-        <h2>Our Services</h2>
-        <div class="cards">
-            <div class="card">🎉 Religious Event Planning</div>
-            <div class="card">🌟 Influencer Marketing</div>
-            <div class="card">💍 Wedding Decor</div>
-            <div class="card">📸 Content Creation</div>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Utsaava blends the rich traditions of India with modern elegance. From religious ceremonies to influencer-driven events, we craft timeless celebrations.</p>
+  </section>
 
-    <section id="gallery" class="section gallery" data-aos="zoom-in">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="https://via.placeholder.com/300" alt="Event 1">
-            <img src="https://via.placeholder.com/300" alt="Event 2">
-            <img src="https://via.placeholder.com/300" alt="Event 3">
-            <img src="https://via.placeholder.com/300" alt="Event 4">
-        </div>
-    </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Religious Event Planning</li>
+      <li>Influencer Marketing</li>
+      <li>Wedding Decor</li>
+      <li>Content Creation</li>
+    </ul>
+  </section>
 
-    <section class="video-section section" data-aos="fade-up">
-        <h2>Watch Our Work</h2>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Gallery Image 1" />
+      <img src="gallery2.jpg" alt="Gallery Image 2" />
+      <img src="gallery3.jpg" alt="Gallery Image 3" />
+      <img src="gallery4.jpg" alt="Gallery Image 4" />
+    </div>
+  </section>
 
-    <section class="section testimonials" data-aos="fade-left">
-        <h2>Testimonials</h2>
-        <blockquote>"Our event was flawless and breathtaking — thanks to Utsaava!" – Riya & Aarav</blockquote>
-        <blockquote>"The best in luxury Indian event experiences." – Priya M.</blockquote>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:utsaava0@gmail.com">utsaava0@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919359861528">+91 93598 61528</a></p>
+    <form action="https://formspree.io/f/mayvnkno" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <section id="contact" class="section contact" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mayvnkno" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <footer>
+    <p>Follow us:</p>
+    <a href="https://instagram.com/utsa_ava" target="_blank">Instagram</a>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://youtube.com" target="_blank">YouTube</a>
+    <p>© 2025 Utsaava. All rights reserved.</p>
+  </footer>
 
-    <footer class="footer">
-        <p>Follow us:</p>
-        <div class="socials">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
 </body>
 </html>
